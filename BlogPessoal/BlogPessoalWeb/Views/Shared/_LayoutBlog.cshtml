@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
     <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
-   <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    @*<link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />*@
+    <link href="~/Content/bootstrap-lumen.css" rel="stylesheet" type="text/css" />
     <script src="~/Scripts/modernizr-2.8.3.js"></script>
     @RenderSection("StyleContente", required: false)
 
@@ -23,7 +24,7 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Categorias de Artigo", "Index", "CategoriasDeArtigo")</li>
+                    <li>@Html.ActionLink("Categorias de Artigo", "Index", "CategoriasDe Artigo")</li>
                     <li>@Html.ActionLink("Autores", "Index", "Autores")</li>
                     <li>@Html.ActionLink("Artigos", "Index", "Artigos")</li>
                 </ul>
@@ -32,11 +33,6 @@
     </div>
 
     <div class="container body-content">
-        <div>
-
-            @Html.Action("CategoriasDeArtigo", "Home")
-              
-        </div>
         @RenderBody()
         <hr />
         <footer>

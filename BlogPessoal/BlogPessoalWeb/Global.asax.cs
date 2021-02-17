@@ -1,3 +1,4 @@
+using BlogPessoalWeb.App_Start;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,8 @@ namespace BlogPessoalWeb
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            FilterConfig.RegisterGlobalFilters
+                (GlobalFilters.Filters);
         }
     }
 }
